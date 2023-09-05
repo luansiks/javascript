@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo</h1>
+    </header>
+    <main>
+        <section id="bloco">
+                    <div>
+                        <label for="ynumero">data de nascimento: </label>
+                        <input type="number" name="numero" id="ynumero" autocomplete="bday-year" placeholder="Ano"><br>
+                        <label for="gen">genero: </label>
+                        <input type="radio" name="gen" id="masc"checked autocomplete="sex"><label for="masc"> masculino </label>
+                        <input type="radio" name="gen" id="femi" autocomplete="sex"><label for="femi"> feminino </label><br>
+                        <input type="submit" value="enviar" id="envi" onclick="toque()">
+                    </div>
+                <div id="result">
+                    prencha os dados para ver o resultado!
+                    <img id="img" src="" alt="">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>LuanSiks</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

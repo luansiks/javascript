@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pais</title>
+    <style>
+        body{
+            background-color: rgb(154, 208, 227);
+            font: normal 20px arial;
+        }
+        input{
+            height: 20px;
+            font-size: 18px;
+        }
+        input#enviar{
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+    <label for="pais">qual seu pais: </label>
+    <input type="text" name="txtpais" id="pais">
+    <input type="submit" value="enviar" id="enviar" onclick="clique()">
+    <div id="espaco">
+
+    </div>
+    <script>
+        function clique(){
+            var valor = document.getElementById('pais')
+            var lugar = document.getElementById('espaco')
+            var pais = String(valor.value)
+            lugar.innerHTML = `<p>você é do ${pais}</p>`
+            if(pais == 'Brasil'){
+                lugar.innerHTML += `<p>você é <strong>brasileiro</strong></p>`
+            }
+            else{
+                lugar.innerHTML += `<p>você é <strong>estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

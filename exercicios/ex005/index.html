@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>verificador de idade</h1>
+    </header>
+    <main>
+        <div>
+            <label for="yano">ano de nascimento:</label><input type="number" name="ano" id="yano" placeholder="Data">
+            <p>sexo:
+                <input type="radio" name="op" id="mascul" checked><label for="mascul">masculino</label>
+                <input type="radio" name="op" id="femi"><label for="femi">feminino</label>
+            </p>
+            <input type="submit" value="enviar" id="env" onclick="verificar()">
+        </div>
+        <div id="result">
+            Prencha os dados para ver o resultado!
+        </div>      
+    </main>
+    <footer>
+        <p>&copy;LuanSiks</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

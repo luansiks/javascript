@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body{
+            font: normal 25px arial;
+            background-color: rgb(107, 107, 107);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste</h1>
+    <p id="paragrafo" onclick="click">isso esta sendo um teste.</p>
+    <script>
+        /*var n1 = Number.parseFloat(window.prompt('digite um numero'))
+        var n2 = Number.parseFloat(window.prompt('digite outro numero'))
+        var s = n2 + n1
+        String(s)
+        window.alert(`a soma de ${n1} e ${n2} é ${s}`)
+       var nome = window.prompt('digite seu nome')
+       document.write(`seu nome tem ${nome.length} letras<br>`)
+       document.write(`nome minusculo é ${nome.toLowerCase()}`)
+       document.write(`<br>nome maiusculo é ${nome.toUpperCase()}`)*/
+        var x = window.document.getElementById('paragrafo')
+        x.addEventListener('click', clicar)
+        function clicar(){
+            x.innerText = 'ola sou siks!'
+            x.style.color = 'rgb(213, 78, 78)'
+        }
+    </script>
+</body>
+</html>
