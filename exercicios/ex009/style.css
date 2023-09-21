@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font: normal 20px Arial;
+    background-color: rgb(79, 156, 232);
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+section#bloco{
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    position: absolute;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+input{
+    border: black 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+div#resu{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+input#envi{
+    padding: 3px;
+}
+footer{
+    margin-top: 430px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
